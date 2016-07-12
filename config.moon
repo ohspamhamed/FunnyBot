@@ -1,5 +1,5 @@
 _ =
-  telegram_api_key: "236577024:AAFOBW9XZb7jweJArhs6icp7VRg69ZAME5U"
+  telegram_api_key: "236577024:AAF-OWyB1GGuer-yykp21n-X1w6uQWrtk-E"
   insta_api_key: "" --http://bit.ly/1SWWkeY
   google_api_key: "" --http://bit.ly/1VuH0Hl
   bing_api_key: "" --http://bit.ly/1Y89l7A
