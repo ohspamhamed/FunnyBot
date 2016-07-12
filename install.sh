@@ -45,5 +45,5 @@ else
 	echo "./bin/telegram-cli -k ./tg/tg-server.pub -P 7731 --json" > tg.sh
 	chmod +x tg.sh
 	echo "Use \"./tg.sh\" to run telegram-CLI"
-	echo "Enjoy !"
+	echo "Dev By AllwenTm"
 fi
