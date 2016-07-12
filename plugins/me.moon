@@ -80,14 +80,13 @@ for k,v in pairs(parameters)
     usage ..= ",#{k}"
     i += 1
 usage ..= "
-_/me facebook imandabot_
+_/me facebook Allwen_
 /me [parameter] del
 Will delete [parameter]
 /me
 Will return your profile and msg Statistics
-_Can also be triggered by reply_
-to set your pharametr(in bot private):
-_/me pharametr name [your account,username or....]_
+`You Can Set Your Info With:`
+_/me {PharametrName} {Your Account,Username or....}_
 "
 return {
   :run
