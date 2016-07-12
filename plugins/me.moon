@@ -11,6 +11,8 @@ parameters = {
 	["instagram"]: "[%s](https://www.instagram.com/%s)\n"
 	["lastfm"]: "[%s](http://www.lastfm.com/user/%s)\n"
 	["username"]: "[%s](http://www.telegram.me/%s)\n"
+	["bot"]: "[%s](http://www.telegram.me/%s)\n"
+	["channel"]: "[%s](http://www.telegram.me/%s)\n"
 }
 patterns = {
 	"^[#!/](me)$"
@@ -34,7 +36,7 @@ run = (msg,matches) ->
 			if is_parameter matches[2]
 				if string.len(matches[3]) < 35
 					redis\set "bot:#{matches[2]}:user:#{msg.from.id}", matches[3]
-					return "Your `#{matches[2]}` has been set to `#{matches[3]}`"
+					return "Your  `#{matches[2]}` has been set to `#{matches[3]}`,Thanks to using Me!"
 				else
 					return "_Too much character_"
 			else
