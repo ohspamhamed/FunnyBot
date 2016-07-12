@@ -80,12 +80,30 @@ for k,v in pairs(parameters)
 		usage ..= ",#{k}"
 		i += 1
 usage ..= "
-_/me facebook allwenwaker_
+_/me facebook imandabot_
 `/me [parameter] del`
 Will delete [parameter]
 `/me`
 Will return your profile and msg Statistics
 _Can also be triggered by reply_
+`Pharametrs`
+location
+spotify
+twitter
+phone
+email
+github
+steam
+facebook
+reddit
+instagram
+lastfm
+username
+bot (Your Bots Id With Out @)
+channel (Your Channels Id With Out @)
+C9
+to set your pharametr(in bot private):
+_/me pharametr name [your account,username or....]_
 "
 return {
 	:run
