@@ -1,7 +1,7 @@
 ver="1.0"
 if [ "$1" = "--help" ]; then
   echo -e "
-        \033[31;47mJack Telegram Bot\033[0m
+        \033[31;47mAllwen Robot\033[0m
 
               \033[5mV $ver\033[0m
 
@@ -17,7 +17,7 @@ if [ "$1" = "--help" ]; then
 elif [ "$1" = "--about" ]; then
   echo -e "
 
-        \033[31;47mJack Telegram Bot\033[0m
+        \033[31;47mAllwen Robot\033[0m
 
          By Iman Daneshi
 
@@ -25,7 +25,7 @@ elif [ "$1" = "--about" ]; then
 
 A multi purpose Telegram bot written in MoonScript !
 
-Website: jack.seedteam.org
+Website: Allwen-Team.ir
 
 "
 elif [ "$1" = "--Update" ]; then
@@ -33,9 +33,9 @@ elif [ "$1" = "--Update" ]; then
 else
   echo -e "
 
-        \033[31;47mJack Telegram Bot\033[0m
+        \033[31;47mThe Allwen Robot\033[0m
 
-         By Iman Daneshi
+         Funny Robot By Allwen Based On Jack
 
               \033[5mV $ver\033[0m
 "
