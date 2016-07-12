@@ -14,7 +14,7 @@ return {
 `/meme [name] "[text top]" "[text buttom]"`
 Generate a meme image
 Example:
-/meme _Derb "Love" "JackBot"_
+/meme _Derb "Love" "Allwen"_
 ]]
     patterns: {
     '^[!/#]meme (.+) "(.+)" "(.+)"$'
