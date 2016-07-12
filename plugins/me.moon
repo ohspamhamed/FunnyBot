@@ -10,10 +10,6 @@ parameters = {
 	["reddit"]: "[%s](https://reddit.com/u/%s)\n"
 	["instagram"]: "[%s](https://www.instagram.com/%s)\n"
 	["lastfm"]: "[%s](http://www.lastfm.com/user/%s)\n"
-	["username"]: "[%s](http://www.telegram.me/%s)\n"
-	["bot"]: "[%s](http://www.telegram.me/%s)\n"
-	["channel"]: "[%s](http://www.telegram.me/%s)\n"
-	["c9"]: "[%s](http://www.c9.io/%s)\n"
 }
 patterns = {
 	"^[#!/](me)$"
@@ -37,7 +33,7 @@ run = (msg,matches) ->
 			if is_parameter matches[2]
 				if string.len(matches[3]) < 35
 					redis\set "bot:#{matches[2]}:user:#{msg.from.id}", matches[3]
-					return "Your  `#{matches[2]}` has been set to `#{matches[3]}`,Thanks to using Me!"
+					return "Your `#{matches[2]}` has been set to `#{matches[3]}`"
 				else
 					return "_Too much character_"
 			else
@@ -86,24 +82,6 @@ Will delete [parameter]
 `/me`
 Will return your profile and msg Statistics
 _Can also be triggered by reply_
-`Pharametrs`
-location
-spotify
-twitter
-phone
-email
-github
-steam
-facebook
-reddit
-instagram
-lastfm
-username
-bot (Your Bots Id With Out @)
-channel (Your Channels Id With Out @)
-C9
-to set your pharametr(in bot private):
-_/me pharametr name [your account,username or....]_
 "
 return {
 	:run
