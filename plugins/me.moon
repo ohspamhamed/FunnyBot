@@ -13,6 +13,7 @@ parameters = {
 	["username"]: "[%s](http://www.telegram.me/%s)\n"
 	["bot"]: "[%s](http://www.telegram.me/%s)\n"
 	["channel"]: "[%s](http://www.telegram.me/%s)\n"
+	["c9"]: "[%s](http://www.c9.io/%s)\n"
 }
 patterns = {
 	"^[#!/](me)$"
@@ -79,7 +80,7 @@ for k,v in pairs(parameters)
 		usage ..= ",#{k}"
 		i += 1
 usage ..= "
-_/me facebook imandabot_
+_/me facebook allwenwaker_
 `/me [parameter] del`
 Will delete [parameter]
 `/me`
