@@ -21,7 +21,7 @@ plugins_list = ->--Returns plugin list
   text ..= "
 Send `/help [plugin name]` for more info."
   text ..= "
-Or Send `/help all` to my private for all info."
+Or Send `/help all` for all info.`Allwen Team`"
   return text
 
 help_all = (target) ->--Returns all plugins info
@@ -64,9 +64,9 @@ run = (msg,matches) ->
     elseif msg.chat.type ~= "private"
       res = help_all(msg.from.id)
       unless res
-        return "_Message me first so i can message you !_"
+        return "_First send message to me :)_"
 
-      return "*I have sent you the plugins list with their full information in a private message*"
+      return "*I have sent you the plugins list with help of their*"
     else
       help_all(msg.from.id)
       return
