@@ -10,6 +10,7 @@ parameters = {
 	["reddit"]: "[%s](https://reddit.com/u/%s)\n"
 	["instagram"]: "[%s](https://www.instagram.com/%s)\n"
 	["lastfm"]: "[%s](http://www.lastfm.com/user/%s)\n"
+	["username"]: "[%s](http://www.telegram.me/%s)\n"
 }
 patterns = {
 	"^[#!/](me)$"
