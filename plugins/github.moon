@@ -36,7 +36,7 @@ repo = (msg, git) ->
 
 
 run = (msg, matches) ->
-  if matches[1] == "gitrepo" and matches[2]
+  if matches[1] == "gitrep" and matches[2]
     return repo msg, matches[2]
   elseif matches[1] == "gituser" and matches[2]
     url = "https://api.github.com/users/#{matches[2]}"
@@ -66,7 +66,7 @@ Repos: #{jdat.public_repos}\n"
 return {
   description: "*github plugin !*"
   usage: [[
-`/gitrepo [repo]` - Return about the repo
+`/gitrep [repo]` - Return about the repo
 `/gituser [user]` - Return about the user
 ]]
   patterns: {
