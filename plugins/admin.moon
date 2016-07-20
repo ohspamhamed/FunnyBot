@@ -57,7 +57,7 @@ run = (msg,matches) ->
   if matches[1] == "admin"
     if matches[2] == "reload"--Reloads the bot(plugins not config!)
       bot_run!
-      return "*Reloaded !*"
+      return "*Im Reloaded Arian!*"
 
   if matches[1] == "bc"--send a msg to chat/user
     telegram!\sendMessage matches[2],matches[3],false,"Markdown",true
