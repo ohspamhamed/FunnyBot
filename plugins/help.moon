@@ -21,7 +21,7 @@ plugins_list = ->--Returns plugin list
   text ..= "
 Send `/help [plugin name]` for more info."
   text ..= "
-Or Send `/help all` for all info.`Allwen Team`"
+Or Send `/help all` for all info.\n`Dev By` @HeIsArian"
   return text
 
 help_all = (target) ->--Returns all plugins info
@@ -86,9 +86,9 @@ run = (msg,matches) ->
     if msg.chat.type ~= "private"
       res = telegram!\sendMessage msg.from.id,plugins_list!,false,"Markdown"
       unless res
-        return "_Message me first so i can message you !_"
+        return "_Message @JustifyBot first!_"
 
-      return "*I have sent you the plugins list in a private message*"
+      return "*I send a list off all plugins in your private.*"
     else
       return plugins_list()
 
