@@ -14,6 +14,7 @@ parameters = {
   ["bot"]: "[%s](http://www.telegram.me/%s)\n"
   ["channel"]: "[%s](http://www.telegram.me/%s)\n"
   ["c9"]: "[%s](http://www.c9.io/%s)\n"
+  ["queen"]: "[%s](http://www.telegram.me/%s)\n"
 }
 patterns = {
   "^[#!/](me)$"
