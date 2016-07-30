@@ -19,9 +19,9 @@ plugins_list = ->--Returns plugin list
         i += 1
 
   text ..= "
-Send `/help [plugin name]` for more info."
+Send `/plugin [plugin name]` for more info."
   text ..= "
-Or Send `/help all` for all info.\n`Dev By` @HeIsArian"
+Or Send `/all plugins` for all info.\n`Dev By` @HeIsArian"
   return text
 
 help_all = (target) ->--Returns all plugins info
@@ -58,7 +58,7 @@ help_all = (target) ->--Returns all plugins info
     return false
 
 run = (msg,matches) ->
-  if matches[1] == "help" and matches[2] == "all"
+  if matches[1] == "all" and matches[2] == "plugins"
     if msg.chat.type == 'inline'
       return
     elseif msg.chat.type ~= "private"
@@ -71,7 +71,7 @@ run = (msg,matches) ->
       help_all(msg.from.id)
       return
 
-  elseif matches[1] == "help" and matches[2]
+  elseif matches[1] == "plugin" and matches[2]
     if msg.chat.type == 'inline'
       pic = "http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-2/128/help-desk-icon.png"
       help_inline = plugin_help matches[2]
@@ -102,10 +102,10 @@ Will return full list of plugins with their commands
 Will return info about that plugin
 "
 patterns = {
-  "^[/!#](help) (.*)$"
-  "^[/!#](help)$"
-  "^[/!#](start)$"
-  "^###inline[/!#](help) (.*)"
+  "^[/!#](plugin) (.*)$"
+  "^[/!#](plugins)$"
+  "^[/!#](plugins)$"
+  "^###inline[/!#](all) (.*)"
 }
 is_listed = false
 return {
